@@ -17,17 +17,6 @@ body {
     grid-template-columns: 300px 3fr;
 }
 
-.section-title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-.sidebar-left {
-    grid-row: 1 / 3;
-    background: #1992d4;
-}
-
 .header {
     grid-column: 2 / 3;
     display: grid;
@@ -42,6 +31,34 @@ body {
     z-index: 10;
 }
 
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchbar {
+    flex: 1;
+    background-color: #e2e8f0;
+    height: 30px;
+    width: auto;
+    border-radius: 16px;
+}
+
+.searchbar:hover,
+button:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+    background-color:transparent;
+    width: 90%;
+    height: 30px;
+    margin-left: 14px;
+    border: none;
+    outline: none;
+}
 .greeting {
     display: flex;
     gap: 15px;
@@ -51,7 +68,6 @@ body {
     padding-left: 20px;
     padding-right: 40px;
     font-weight: bold;
-    justify-self: right;
     font-size: 1rem;
 }
 
@@ -59,6 +75,10 @@ body {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+
+.menu ul li {
+    justify-self: end;
 }
 
 .menu-buttons {
@@ -77,17 +97,36 @@ button {
     border-radius: 18px;
 }
 
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-left {
+    grid-row: 1 / 3;
+    background: #1992d4;
+}
+
+.sidebar-left a {
+    text-decoration: none;
+    color:#FFFFFF;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .sidebar-left ul {
     padding: 20px;
     font-weight: bold;
     color: white;
     list-style-type: none;
-}
-
-.logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
 }
 
 .sidebar-left ul li {
@@ -127,6 +166,20 @@ button {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
+.card .title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-buttons {
+    align-self: flex-end;
+}
+
+.card-buttons svg {
+    margin-left: 10px;
+}
+
+
 .announcements .modal {
     background-color: #FFFFFF;
     height: auto;
@@ -156,16 +209,6 @@ button {
     margin-bottom: 10px;
 }
 
-
-.card .title {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.card-buttons {
-    align-self: flex-end;
-}
-
 .trending {
     grid-column: 2 / 3;
 }
@@ -191,30 +234,4 @@ button {
 .ticker .id {
     font-weight: bold;
 }
-.search {
-    display: flex;
-    gap: 10px;
-}
 
-.searchbar {
-    flex: 1;
-    background-color: #e2e8f0;
-    height: 30px;
-    width: auto;
-    border-radius: 16px;
-}
-
-.searchbar:hover,
-button:hover {
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-    border-color: rgba(223,225,229,0);
-}
-
-.search-input {
-    background-color:transparent;
-    width: 90%;
-    height: 30px;
-    margin-left: 14px;
-    border: none;
-    outline: none;
-}

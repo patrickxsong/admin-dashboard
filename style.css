@@ -11,9 +11,16 @@
 body {
     font-family: Roboto, sans-serif
 }
+
 .container {
     display: grid;
     grid-template-columns: 300px 3fr;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
 
 .sidebar-left {
@@ -104,9 +111,6 @@ button {
 
 .projects .section-title {
     margin-left: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;;
-    font-size: 1.25rem;
 }
 
 .projects .card {
@@ -123,6 +127,36 @@ button {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
+.announcements .modal {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    max-width: 280px;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    margin-bottom: 30px;
+}
+
+.announcements .title {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.announcements .body {
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.divider {
+    width: 100%;
+    background-color: #e2e8f0;
+    height: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 .card .title {
     font-weight: bold;
     margin-bottom: 8px;
@@ -136,6 +170,27 @@ button {
     grid-column: 2 / 3;
 }
 
+.tickers-modal {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    max-width: 280px;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.ticker {
+   display: flex;
+   gap: 20px;
+}
+
+.ticker {
+    font-size: 0.75rem;
+}
+
+.ticker .id {
+    font-weight: bold;
+}
 .search {
     display: flex;
     gap: 10px;
@@ -154,6 +209,7 @@ button:hover {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
+
 .search-input {
     background-color:transparent;
     width: 90%;
